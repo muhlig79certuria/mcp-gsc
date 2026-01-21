@@ -9,4 +9,4 @@ RUN pip install --no-cache-dir --upgrade pip \
 
 EXPOSE 8080
 
-CMD ["python", "gsc-server.py"]
+CMD ["python", "gscserver.py"]
