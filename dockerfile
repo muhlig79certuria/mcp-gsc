@@ -1,7 +1,6 @@
 FROM python:3.11-slim
 
-WORKDIR /
-
+WORKDIR /app
 COPY . .
 
 RUN pip install --no-cache-dir --upgrade pip \
@@ -9,4 +8,4 @@ RUN pip install --no-cache-dir --upgrade pip \
 
 EXPOSE 8080
 
-CMD ["python", "gscserver.py"]
+CMD ["python", "gsc_server.py"]
